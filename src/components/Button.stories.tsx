@@ -11,3 +11,16 @@ export default {
 } as Meta<ButtonProps>
 
 export const Default: StoryObj<ButtonProps> = {}
+
+export const Disabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true
+  },
+  argTypes: {
+    disabled: {
+      table: {
+        disable: true,
+      }
+    },
+  }
+}
